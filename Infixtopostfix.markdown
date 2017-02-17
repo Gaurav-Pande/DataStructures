@@ -18,14 +18,9 @@ public class infixtopostfix {
 			return 2;
 		case '^':
 			return 3;
-			
-		
-		
 		}
 		
-		return -1;
-		
-		
+		return -1;	
 	}
 	
 	public String infix2postfix(String exp){
