@@ -46,6 +46,7 @@ class Solution(object):
 
             if tempA == None or tempB == None:
                 return None
+            
 
         return tempA
 
@@ -56,7 +57,7 @@ class Solution(object):
                :rtype: ListNode
 
         """
-        
+
         tempa = headA
         tempb = headB
 
