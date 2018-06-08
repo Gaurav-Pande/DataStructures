@@ -22,7 +22,7 @@ def inorder(root,result):
 
 
 
-def postorder(root,result):
+def postorder(root,result=[]):
     if root == None:
         return None
     else:
@@ -55,5 +55,5 @@ if __name__ == '__main__':
     obj.right.left = Node(8)
     obj.right.right = Node(7)
     print (preorder(obj,result=[]))
-    print (postorder(obj,result=[]))
+    print (postorder(obj))
     print (inorder(obj,result=[]))

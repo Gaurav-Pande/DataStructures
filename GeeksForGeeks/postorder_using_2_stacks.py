@@ -15,6 +15,9 @@ def postOrderTraversal(root):
     result = []
     stack1.append(root)
 
+    if root == None:
+        return None
+
     while stack1:
         element = stack1.pop()
         stack2.append(element)
