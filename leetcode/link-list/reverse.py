@@ -10,7 +10,7 @@ class ListNode:
         self.next = None
 
 class Solution:
-    def reverseList(self, head, val):
+    def reverseList(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
@@ -18,7 +18,7 @@ class Solution:
         if head == None or head.next == None:
             return head
         else:
-            Node = self.reverseList(head.next,head.next.val)
+            Node = self.reverseList(head.next)
             head.next.next = head
             head.next = None
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     obj.next.next.next.next = ListNode(5)
     obj.next.next.next.next.next = ListNode(6)
     ob = Solution()
-    head = ob.reverseList(obj,obj.val)
+    head = ob.reverseList(obj)
     while head:
         print (head.val)
         head = head.next
