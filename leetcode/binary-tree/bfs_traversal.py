@@ -6,7 +6,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
+import  collections
 class Solution:
     def levelOrder(self, root):
         """
@@ -41,3 +41,38 @@ class Solution:
 
             
         return result
+
+
+
+
+
+## A much better solution than above
+class Solution2:
+    def levelOrderBottom(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        dic = collections.defaultdict(list)
+        q = []
+        res = []
+        if root == None:
+            return []
+        else:
+            q.append((root, 1))
+            while q:
+                ## Note pop(0) is a costly operation as we need to shift the rest of the value to one place left,
+                ## so instead of that we could have used collections.Deque whihc offers faster insert and pop operation
+                root, level = q.pop(0)
+                dic[level].append(root.val)
+                if root.left: q.append((root.left, level + 1))
+                if root.right: q.append((root.right, level + 1))
+
+        for key in sorted(dic, reverse=True):
+            res.append(dic[key])
+
+        return res
+
+
+
+

@@ -35,3 +35,23 @@ for a0 in range(t):
         print("YES")
     else:
         print("NO")
+
+
+
+# alternate and more pythonic solution
+
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        dic = {')': '(', ']': '[', '}': '{'}
+        stack = []
+        for i in range(len(s)):
+            if s[i] in ['(', '[', '{']:
+                stack.append(s[i])
+            else:
+                if not stack or stack.pop() != dic[s[i]]:
+                    return False
+        return stack == []
