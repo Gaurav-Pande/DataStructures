@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # check whether a binary tree is a balanced binary tree or not
 # link: https://leetcode.com/problems/balanced-binary-tree/description/
 #

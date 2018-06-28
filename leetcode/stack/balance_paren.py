@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # check whether a string is a balanced paranthesis or not
 # link: https://leetcode.com/problems/valid-parentheses/description/
 

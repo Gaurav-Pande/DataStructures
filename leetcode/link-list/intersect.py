@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # find the intersection point of 2 link list
 # link: https://leetcode.com/problems/intersection-of-two-linked-lists/description/
 

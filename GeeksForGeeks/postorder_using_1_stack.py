@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # Iterative post order traversal in a binary tree using 1 stacks
 # Link: https://www.geeksforgeeks.org/iterative-postorder-traversal/
 # video tutorial to follow: https://www.youtube.com/watch?v=xLQKdq0Ffjg

@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # remove all elements from a  link list with a given val
 # link: https://leetcode.com/problems/remove-linked-list-elements/description/
 

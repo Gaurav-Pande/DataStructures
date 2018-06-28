@@ -1,3 +1,5 @@
+# Author: Gaurav Pande
+
 # level order traversal in a binary tree using queue
 # Link: https://www.geeksforgeeks.org/?p=2686
 
@@ -12,13 +14,13 @@ class Node:
 
 # define our method here to print element level wise of bfs using queue
 
-
+from collections import deque
 def bfs_print(root):
-    queue = []
+    queue = deque()
     queue.append(root)
     result = []
     while queue:
-        element = queue.pop(0)
+        element = queue.popleft()
         result.append(element.val)
         if element.left != None:
             queue.append(element.left)

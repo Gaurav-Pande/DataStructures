@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # given a link list, separate the odd and even part of the list and combine
 # link: https://leetcode.com/problems/odd-even-linked-list/description/
 

@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # [Problem link](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem)
 
 def array_left_rotation(a, n, k):

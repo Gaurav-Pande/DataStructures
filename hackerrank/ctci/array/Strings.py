@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # [Strings: Making Anagrams](https://www.hackerrank.com/challenges/ctci-making-anagrams/problem)
 
 def number_needed(a, b):

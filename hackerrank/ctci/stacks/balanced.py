@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # [Stacks: Balanced Brackets](https://www.hackerrank.com/challenges/ctci-balanced-brackets/problem)
 
 def is_matched(expression):

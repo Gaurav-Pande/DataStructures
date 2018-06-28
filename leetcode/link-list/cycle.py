@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # Detect the cycle in a link list
 # link: https://leetcode.com/problems/linked-list-cycle/description/
 

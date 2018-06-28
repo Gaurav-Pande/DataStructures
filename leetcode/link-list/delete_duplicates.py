@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # delete all the duplicate values from the link list
 # link:https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 # algo is similar to delete an element from the linklist

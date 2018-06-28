@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # preorder posrorder and inorder traversal in a binary tree
 # Link: https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
 

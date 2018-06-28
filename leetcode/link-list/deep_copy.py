@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # copy  a linked list which contains a random pointer with it
 # link: https://leetcode.com/problems/copy-list-with-random-pointer/description/
 

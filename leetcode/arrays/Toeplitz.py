@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 #(766. Toeplitz Matrix)[https://leetcode.com/problems/toeplitz-matrix/description/]
 
 class Solution:

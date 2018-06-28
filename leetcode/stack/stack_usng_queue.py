@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # implement stack using queue
 # link: https://leetcode.com/problems/implement-stack-using-queues/description/
 

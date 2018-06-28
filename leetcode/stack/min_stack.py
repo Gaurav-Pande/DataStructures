@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # implement stack in python with an additional feature of getMIN
 # link: https://leetcode.com/problems/min-stack/description/
 

@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # Remove nth element from the end of the linked list
 # link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 

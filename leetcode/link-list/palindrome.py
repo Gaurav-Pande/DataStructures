@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # check if a link list is a palindrome or not
 # link: https://leetcode.com/problems/palindrome-linked-list/description/
 

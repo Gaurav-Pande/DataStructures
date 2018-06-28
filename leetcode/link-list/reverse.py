@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # reverse a link list using recursion
 # Link: https://leetcode.com/problems/reverse-linked-list/description/
 

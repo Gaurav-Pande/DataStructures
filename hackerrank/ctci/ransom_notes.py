@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 def ransom_note(magazine, ransom):
     from collections import Counter
     result = True

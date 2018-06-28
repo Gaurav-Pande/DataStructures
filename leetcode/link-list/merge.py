@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # Merge two sorted list
 # link: https://leetcode.com/problems/merge-two-sorted-lists/description/
 # Definition for singly-linked list.

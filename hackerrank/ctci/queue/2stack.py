@@ -1,3 +1,4 @@
+# Author: Gaurav Pande
 # [Queues: A Tale of Two Stacks](https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem)
 
 class MyQueue(object):
