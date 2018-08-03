@@ -183,3 +183,13 @@ List of problems that I solved in leetcode for coding practice(Few are also from
 | --- | ----- | -------- | ---- | ----- | 
 |136|[Single Number](https://leetcode.com/problems/single-number/description/)| [Python ](./bitmap/136.py) | _O(N)_| _O(1)_  |
 --->
+
+
+## Attributions
+
+This project has come from learning through multiple platforms like leetcode[link](https://leetcode.com/), geegksforgeeks [link](https://www.geeksforgeeks.org/) and hackerrank [link](https://www.hackerrank.com/). Also i have tried to maintain my project similar to what have done here: [link](https://github.com/yuzhoujr/leetcode)
+
+
+## License
+
+MIT
