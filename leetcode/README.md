@@ -187,7 +187,7 @@ List of problems that I solved in leetcode for coding practice(Few are also from
 
 ## Attributions
 
-This project has come from learning through multiple platforms like leetcode[link](https://leetcode.com/), geegksforgeeks [link](https://www.geeksforgeeks.org/) and hackerrank [link](https://www.hackerrank.com/). Also i have tried to maintain my project similar to what have done here: [link](https://github.com/yuzhoujr/leetcode)
+This project has come from learning through multiple platforms like leetcode ([link](https://leetcode.com/)), geegksforgeeks  ([link](https://www.geeksforgeeks.org/)) and hackerrank ([link](https://www.hackerrank.com/)). Also i have tried to maintain my project similar to what have done here: ([link](https://github.com/yuzhoujr/leetcode))
 
 
 ## License
