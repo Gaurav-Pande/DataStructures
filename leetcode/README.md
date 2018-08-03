@@ -1,5 +1,4 @@
-List of problems that i solved in leetcode for coding practice:
-
+List of problems that I solved in leetcode for coding practice(Few are also from GFG ):
 
 
 ## Strings Easy
