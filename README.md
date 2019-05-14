@@ -15,3 +15,12 @@ So what's left? Again, in order of priority:
 * Linked Lists
 * Stacks/Queues
 * Bit Manipulation
+
+## Attributions
+
+This project has come from learning through multiple platforms like leetcode(https://leetcode.com/), geegksforgeeks(https://www.geeksforgeeks.org/) and hackerrank(https://www.hackerrank.com/). Also i have tried to maintain my project similar to what have done here: https://github.com/yuzhoujr/leetcode
+
+
+## License
+
+MIT
