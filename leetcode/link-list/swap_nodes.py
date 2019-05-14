@@ -36,6 +36,17 @@ class Solution:
 
 
 
+    def swapPairsRecursive(self,head):
+        if not head or not head.next:
+            return head
+
+        current_node = head.next
+        head.next = self.swapPairsRecursive(head.next.next)
+        current_node.next = head
+        return current_node
+
+
+
 if __name__ == '__main__':
     obj = ListNode(1)
     obj.next = ListNode(2)
@@ -44,7 +55,7 @@ if __name__ == '__main__':
     #obj.next.next.next.next = ListNode(5)
     #obj.next.next.next.next.next = ListNode(6)
     ob = Solution()
-    head = ob.swapPairs(obj)
+    head = ob.swapPairsRecursive(obj)
     while head:
         print (head.val)
         head = head.next

@@ -52,6 +52,37 @@ class SolutionPreorder:
             self.preorder(root.right,c_sum,sum)
 
 
+class Solutions(object):
+    def sumRootToLeaf(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        b = []
+        l = []
+        result = 0
+        def dfs(root):
+            if not root:
+                b.append(l)
+                l.pop()
+                return None
+            l.append(root.val)
+            dfs(root.left)
+            dfs(root.right)
+        dfs(root)
+        def convert(s):
+            st = ""
+            return (st.join(s))
+        for elem in b:
+            s = convert(elem)
+            result += int(s,2)
+
+        return result
+
+
+
+
+
 
 
 

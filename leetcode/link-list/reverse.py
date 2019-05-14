@@ -17,6 +17,7 @@ class Solution:
         :rtype: ListNode
         """
         if head == None or head.next == None:
+            print(head.val)
             return head
         else:
             Node = self.reverseList(head.next)

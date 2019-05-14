@@ -39,6 +39,22 @@ class Solution:
 
         return temp_node.next
 
+        # Recursive Implementation
+        # temp = None
+        # if not l1:
+        #     return l2
+        # if not l2:
+        #     return l1
+        #
+        # if l1 and l2:
+        #     if l1.val <= l2.val:
+        #         temp = l1
+        #         temp.next = self.mergeTwoLists(l1.next, l2)
+        #     else:
+        #         temp = l2
+        #         temp.next = self.mergeTwoLists(l1, l2.next)
+        # return temp
+
 
 
 

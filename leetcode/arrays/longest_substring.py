@@ -26,3 +26,50 @@ class Solution:
                     j = j + 1
                     
         return result
+
+# sliding window
+class Solution2(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        import collections
+        dic = collections.defaultdict(int)
+        left, right = 0, 0
+        result = 0
+        counter = 0
+        while right < len(s):
+            dic[s[right]] += 1
+            if dic[s[right]] > 1:
+                counter += 1
+            right += 1
+
+            while counter > 0:
+                if s[left] in dic:
+                    if dic[s[left]] > 1:
+                        counter -= 1
+                    dic[s[left]] -= 1
+                left += 1
+            result = max(result, right - left)
+        return result
+
+# storing the index in the dictionary
+class Solution3:
+    # @return an integer
+    def lengthOfLongestSubstring(self, s):
+        start = maxLength = 0
+        usedChar = {}
+
+        for i in range(len(s)):
+            if s[i] in usedChar and start <= usedChar[s[i]]:
+                start = usedChar[s[i]] + 1
+            else:
+                maxLength = max(maxLength, i - start + 1)
+
+            usedChar[s[i]] = i
+
+        return maxLength
+
+
+
