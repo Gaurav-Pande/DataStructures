@@ -8,35 +8,53 @@ class Solution(object):
         """
         if not grid:
             return 0
-        rows, cols = len(grid), len(grid[0])
+        row, col = 0, 0
+        col_len = len(grid[0])
+        row_len = len(grid)
         result = 0
-
-        for i in range(rows):
-            for j in range(cols):
+        for i in range(row_len):
+            for j in range(col_len):
                 if grid[i][j] == "1":
                     result += 1
-                    self.bfs_search(grid, i, j)
+                    self.dfs_traversal(i, j, row_len, col_len, grid)
         return result
 
-    def bfs_search(self, grid, row, col):
+    def bfs_traversal(self, row, col, row_len, col_len, grid):
         import collections
+
         q = collections.deque()
-        d = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
         q.append((row, col))
         while q:
             cr, cc = q.popleft()
-            for elem in d:
-                r, c = elem
-                nr, nc = r + cr, c + cc
-                if self.isvalid(grid, nr, nc):
-                    if grid[nr][nc] == "1":
-                        q.append((nr, nc))
-                        grid[nr][nc] = "0"
+            for m in moves:
+                tr, tc = m
+                nr = cr + tr
+                nc = cc + tc
+                if self.isvalid(nr, nc, row_len, col_len) and grid[nr][nc] == '1':
+                    q.append((nr, nc))
+                    grid[nr][nc] = '0'
 
-    def isvalid(self, grid, row, col):
-        if row < 0 or col < 0 or row >= len(grid) or col >= len(grid[0]):
+    def isvalid(self, row, col, row_len, col_len):
+        if row >= row_len or row < 0 or col >= col_len or col < 0:
             return False
-        return True
+        else:
+            return True
+
+    def dfs_traversal(self, row, col, row_len, col_len, grid):
+        if self.isvalid(row, col, row_len, col_len) and grid[row][col] == '1':
+            grid[row][col] = '0'
+            self.dfs_traversal(row + 1, col, row_len, col_len, grid)
+            self.dfs_traversal(row, col + 1, row_len, col_len, grid)
+            self.dfs_traversal(row - 1, col, row_len, col_len, grid)
+            self.dfs_traversal(row, col - 1, row_len, col_len, grid)
+
+
+
+
+
+
+
 
 
 
