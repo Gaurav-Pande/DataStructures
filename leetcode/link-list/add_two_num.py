@@ -49,6 +49,8 @@ class Solution:
             head = node
             num -= 1
         return head
+
+
     # recursive 
     def addlist(self, head1, head2):
         if head1==None and head2==None:

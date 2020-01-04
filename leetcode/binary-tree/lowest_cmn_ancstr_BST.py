@@ -8,7 +8,9 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+
 class Solution:
+
     def lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
@@ -36,6 +38,9 @@ class Solution:
             else:
                 return root
         return root
+
+
+
 
     # Recursive solution
     def lowestCommonAncestorIII(self, root, p, q):

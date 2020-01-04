@@ -3,7 +3,7 @@ class Solution:
     def __init__(self):
         self.dic = {}
 
-    def numTrees(self, n: int) -> int:
+    def numTrees(self, n):
         # notice here that we have used the floor integer division because using // we can divide as many
         # large number as we can.
         # for reference look here: https://stackoverflow.com/questions/27946595/how-to-manage-division-of-huge-numbers-in-python
@@ -27,7 +27,7 @@ class Solution:
     #     return dic[n]
 
     # using factorial or DP combine
-    def fact(self, n: int) -> int:
+    def fact(self, n):
         if n == 1 or n == 0:
             return 1
         else:

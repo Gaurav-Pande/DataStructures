@@ -162,20 +162,20 @@ List of problems that I solved in leetcode for coding practice(Few are also from
 ## Dynamic Programming Easy
 |  #  | Title | Solution | Time | Space | 
 | --- | ----- | -------- | ---- | ----- | 
-|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/#/solutions)| [Python ](./dp/70.py) | _O(N)_| _O(1)_  | Easy| 
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/#/description)| [Python ](./dp/53.py) | _O(N)_| _O(N)_  | Easy|
-|198|[House Robber](https://leetcode.com/problems/house-robber/#/description)| [Python ](./dp/198.py) | _O(N)_| _O(N)_  | Easy|
+|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/#/solutions)| [Python ](./dp&backtracking/70.py) | _O(N)_| _O(1)_  | Easy| 
+|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/#/description)| [Python ](./dp&backtracking/53.py) | _O(N)_| _O(N)_  | Easy|
+|198|[House Robber](https://leetcode.com/problems/house-robber/#/description)| [Python ](./dp&backtracking/198.py) | _O(N)_| _O(N)_  | Easy|
 --->
 
 <!---
 ## Dynamic Programming Medium
 |  #  | Title | Solution | Time | Space | 
 | --- | ----- | -------- | ---- | ----- | 
-|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/#/submissions/1)| [Python ](./dp/64.py) | _O(N^2)_| _O(M*N)_  |  
-|62|[Unique Paths](https://leetcode.com/problems/unique-paths/#/description)| [Python ](./dp/62.py) | _O(N^2)_| _O(M*N)_  |  Reference #64|
-|55|[Jump Game](https://leetcode.com/problems/jump-game/)| [Python ](./dp/55.py) | _O(N^2)_| _O(1)_  |  TLE with DP/Use Greedy for O(N) Solution|
-|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/#/description)| [Python ](./dp/55.py) | _O(N^2)_| _O(1)_  |   TLE with DP/Use Greedy for O(N) Solution |
-|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description)| [Python ](./dp/300.py) | _O(N^2)_| _O(1)_  |  Use Binary-Search for NlogN Solution|
+|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/#/submissions/1)| [Python ](./dp&backtracking/64.py) | _O(N^2)_| _O(M*N)_  |  
+|62|[Unique Paths](https://leetcode.com/problems/unique-paths/#/description)| [Python ](./dp&backtracking/62.py) | _O(N^2)_| _O(M*N)_  |  Reference #64|
+|55|[Jump Game](https://leetcode.com/problems/jump-game/)| [Python ](./dp&backtracking/55.py) | _O(N^2)_| _O(1)_  |  TLE with DP/Use Greedy for O(N) Solution|
+|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/#/description)| [Python ](./dp&backtracking/55.py) | _O(N^2)_| _O(1)_  |   TLE with DP/Use Greedy for O(N) Solution |
+|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description)| [Python ](./dp&backtracking/300.py) | _O(N^2)_| _O(1)_  |  Use Binary-Search for NlogN Solution|
 --->
 <!---
 ## BitMap Easy
