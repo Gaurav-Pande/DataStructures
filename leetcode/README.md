@@ -1,5 +1,6 @@
 List of problems that I solved in leetcode for coding practice(Few are also from GFG ):
 
+# Note: I have added many new problems, but I could not get time to update here at README. Look out at the respective directory at the repo for problems.
 
 ## Strings Easy
 |  #  | Title | Solution | Time | Space | 
