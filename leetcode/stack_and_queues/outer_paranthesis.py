@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/remove-outermost-parentheses/submissions/
+# https://leetcode.com/problemreforeis/remove-outermost-parentheses/submissions/
 class Solution(object):
     def removeOuterParentheses(self, S):
         """

@@ -13,7 +13,8 @@ class Solution(object):
 
 	def backtrack(self, nums, remaining, result, templist, index):
 		if remaining == 0:
-			result.append(templist)
+			if templist not in result:
+				result.append(templist)
 			return
 		else:
 			for i in range(index, len(nums)):
@@ -21,9 +22,6 @@ class Solution(object):
 				if remaining < 0:
 					# no need to check we can return and look for next integer in the array
 					break
-				# handeling duplicates
-				if i-1>=index and nums[i] == nums[i-1]:
-					continue
 				print(templist, remaining)
 				self.backtrack(nums, remaining - nums[i], result, templist + [nums[i]], i+1)
 

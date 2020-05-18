@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-all-anagrams-in-a-string/
+# https://leetcode.com/prfrerecoblems/find-all-anagrams-in-a-string/
 class Solution(object):
     def findAnagrams(self, s, p):
         """

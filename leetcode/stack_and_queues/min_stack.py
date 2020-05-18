@@ -1,7 +1,7 @@
 # Author: Gaurav Pande
 # implement stack in python with an additional feature of getMIN
 # link: https://leetcode.com/problems/min-stack/description/
-
+# the idea is to keep 2 elements in the stack 1 the top element and other is the minimum element
 import sys
 class MinStack(object):
 

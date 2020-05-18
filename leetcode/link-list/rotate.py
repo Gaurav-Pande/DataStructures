@@ -1,4 +1,4 @@
-# Author: Gaurav Pande
+ # Author: Gaurav Pande
 # rotate a link list
 # link: https://leetcode.com/problems/rotate-list/description/
 

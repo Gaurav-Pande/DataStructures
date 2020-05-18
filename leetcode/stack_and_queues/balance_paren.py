@@ -1,6 +1,7 @@
-# Author: Gaurav Pande
+ # Author: Gaurav Pande
 # check whether a string is a balanced paranthesis or not
-# link: https://leetcode.com/problems/valid-parentheses/description/
+# link: https://leetcode.com/problems
+# /valid-parentheses/description/
 
 class Solution(object):
     def isValid(self, s):

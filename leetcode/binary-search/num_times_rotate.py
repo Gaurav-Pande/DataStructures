@@ -12,9 +12,17 @@ class BinarySearch(object):
 				l = mid+1
 		return l
 
+		# while l<r:
+		# 	mid = (l+r)/2
+		# 	if list[mid-1] < list[mid]:
+		# 		l = mid+1
+		# 	else:
+		# 		r = mid
+		#
+		# return l
 
 
 if __name__ == '__main__':
 	ob = BinarySearch()
-	list = [10,15,17,1,2,3,4]
+	list = [10,15,17,19,2,3,4]
 	print(ob.numberOfTimes(list))
