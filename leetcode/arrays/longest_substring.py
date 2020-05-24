@@ -34,6 +34,12 @@ class Solution2(object):
         :type s: str
         :rtype: int
         """
+        '''
+        Two pointer method:
+        1. you first slide towards right until you get a repeating char.
+        2. moment you get a repeating char, you start shifting your left pointer towards right
+            1. you can move towards left by checking first
+        '''
         import collections
         dic = collections.defaultdict(int)
         left, right = 0, 0
@@ -46,10 +52,9 @@ class Solution2(object):
             right += 1
 
             while counter > 0:
-                if s[left] in dic:
-                    if dic[s[left]] > 1:
-                        counter -= 1
-                    dic[s[left]] -= 1
+                if dic[s[left]] > 1:
+                    counter -= 1
+                dic[s[left]] -= 1
                 left += 1
             result = max(result, right - left)
         return result
