@@ -1,5 +1,8 @@
+# https://leetcode.com/problems/longest-palindromic-subsequence
 # print longest pallindrom subsequence in a string
 # or print longest common subsequence in a string and the reverse of its string
+# 
+
 class Solution(object):
 	def __init__(self):
 		self.result = ""
@@ -15,7 +18,7 @@ class Solution(object):
 		result = ""
 		l1 = len(X)
 		l2 = len(Y)
-		dp = [[0] * (l1 + 1)] * (l2 + 1)
+		dp = [[0] * (l2 + 1)] * (l1w + 1)
 		for i in range(l1 + 1):
 			for j in range(l2 + 1):
 				if i == 0 or j == 0:
@@ -39,7 +42,7 @@ class Solution(object):
 				j -= 1
 
 		print(dp)
-		return result
+		return len(result)
 
 
 

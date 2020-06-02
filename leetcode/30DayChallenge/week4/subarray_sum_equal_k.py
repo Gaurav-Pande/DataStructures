@@ -7,6 +7,14 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+
+        """
+        Keep on adding the sum to the list. [1,1,1,1], k=2
+        sum would be = [0,1,2,3,4]
+        at each index after calculating sum, check if sum-k is in the dictionary(this will hold the sum and its count)
+        if sum-k is in there then there is a subarray we have found. in above example
+        0-2=No, 1-2=No, 2-2=0(exist in the dictionary.. that means a subarray is found with sum 2=1,1)
+        """
         
         dic = {}
         dic[0] = 1
