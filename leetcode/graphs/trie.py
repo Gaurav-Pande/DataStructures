@@ -1,4 +1,4 @@
-# link: https://leetcode.com/problems/implement-trie-prefix-tree
+# link: fo
 
 # implement a trie daastrutcture or prefix datastructure
 import collections

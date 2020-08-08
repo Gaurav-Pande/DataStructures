@@ -1,3 +1,4 @@
+#link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solution/
 # find number of times an array is rotated
 
 class BinarySearch(object):
@@ -6,7 +7,7 @@ class BinarySearch(object):
 
 		while l<r:
 			mid = (l+r)/2
-			if list[mid] < list[mid+1]:
+			if list[mid] < list[r]:
 				r  = mid
 			else:
 				l = mid+1
@@ -25,4 +26,5 @@ class BinarySearch(object):
 if __name__ == '__main__':
 	ob = BinarySearch()
 	list = [10,15,17,19,2,3,4]
+	# [2,3,4,10,15,17,19]
 	print(ob.numberOfTimes(list))

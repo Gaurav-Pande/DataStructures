@@ -1,4 +1,5 @@
 # find the first and last occurance of a number in  a sorted list
+# link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 class BinarySearch(object):
 	def firstAndLastOccurance(self,list,val):
 		left = 0
@@ -35,6 +36,66 @@ class BinarySearch(object):
 				left = mid+1
 
 		return first,last
+
+		
+class Solution(object):
+    def searchRange(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        l,r =0,len(nums)-1
+        f,s=-1,-1
+        if not nums:
+            return [f,s]
+        
+        if nums[l]==nums[r]==target:
+            return [l,r]
+    
+        while l <= r:
+            mid = (l+r)//2
+            # 8,8,8,8
+            # 7,8,8,8
+            # 8,8,8,9
+            if nums[mid] == target:
+                f = mid
+                if mid == 0 or nums[mid-1]!=target :
+                    break
+                else:
+                    r=mid-1
+            elif nums[mid]>target:
+                r = mid-1
+            else:
+                l= mid+1
+                
+        l,r = 0,len(nums)-1
+        
+        while l<=r:
+            mid =(l+r)//2
+            if nums[mid]==target:
+                s=mid
+                if  mid == len(nums)-1 or nums[mid+1]!=target:
+                    break
+                else:
+                    l = mid+1
+            elif nums[mid]<target:
+                l=mid+1
+            else:
+                r = mid-1
+                
+                
+                
+                
+            
+            
+            
+        return [f,s]
+            
+            
+        
+        
+        
 
 
 if __name__ == '__main__':

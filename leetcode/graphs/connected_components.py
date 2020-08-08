@@ -1,5 +1,7 @@
 # link: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
 
+
+# Dfs
 class Solution(object):
     def countComponents(self, n, edges):
         """
@@ -103,4 +105,3 @@ class Solution(object):
             root[i]=root[root[i]]
             i=root[i]
         return i
-            

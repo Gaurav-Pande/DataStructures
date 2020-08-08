@@ -24,3 +24,35 @@ class Solution(object):
         self.result = 0
         self.helper(root, sum, 0, {0:1})
         return self.result
+
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: List[List[int]]
+        """
+        res = []
+        self.pathSumHelper(root,sum, res, [])
+        return res
+    
+    def pathSumHelper(self, root, target, res, temp):
+        if not root:
+            return
+        if not root.left and not root.right and target-root.val == 0:
+            # print(temp)
+            temp.append(root.val)
+            res.append(temp[:])
+        else:
+            self.pathSumHelper(root.left, target-root.val, res, temp+[root.val])
+            self.pathSumHelper(root.right, target-root.val, res, temp + [root.val])
+            
+
+            
