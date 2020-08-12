@@ -2,6 +2,12 @@ List of problems that I solved in leetcode for coding practice(Few are also from
 
 # Note: I have added many new problems, but I could not get time to update here at README. Look out at the respective directory at the repo for problems.
 
+### Best way to navigate this repository:
+
+Since it is a bit difficult to manage and all the questions at one page here at README.md, I think the best way to navigate is visit the folders in this repository, as all the relevant questions are added to the relevant folders with as much discriptive name as I can.
+Once you open any file, at the top you will see the leetcode link to that question. That way you can directly jump to that question, solve and come back to see the solution if you need any help.
+
+
 ## Strings Easy
 |  #  | Title | Solution | Time | Space | 
 | --- | ----- | -------- | ---- | ----- | 
