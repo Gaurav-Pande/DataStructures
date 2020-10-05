@@ -45,3 +45,33 @@ class Solution(object):
         else:
             final_key = zero_left
         return dic[final_key]
+
+
+
+import sys
+
+class Solution(object):
+    def threeSumClosest(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        diff = float('inf')
+        nums.sort()
+        
+        for i in range(len(nums)):
+            l,r = i+1,len(nums)-1
+            while l<r:
+                c = nums[i] +nums[l] + nums[r]
+                if abs(target-c) < abs(diff):
+                    diff = target - c
+                if c<target:
+                    l+=1
+                else:
+                    r-=1
+            if diff == 0:
+                break
+                
+        return target - diff
+                    

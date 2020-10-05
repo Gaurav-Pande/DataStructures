@@ -1,7 +1,6 @@
 # Author: Gaurav Pande
 # add to numbers without reversing the link list
-# link: https://leetcode.com/problems/add-two-numbers/#/description
-
+# link:  https://leetcode.com/problems/add-two-numbers-ii/submissions/
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -63,7 +62,10 @@ class Solution:
         return (c, ans)
 
 
-# Better solution
+# similar question
+# link: https://leetcode.com/problems/add-two-numbers/#/description
+# this solution is when you have given the
+# list in reverse order. this is  a diff question
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, val=0, next=None):

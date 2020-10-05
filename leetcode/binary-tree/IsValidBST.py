@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/validate-binary-search-tree/submissions/
 
+
+# the key idea is to block all unnecessary recursions.
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -34,6 +36,32 @@ class Solution(object):
         return self.helper(root)
 
 
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        return self.isValid(root)
+    
+    
+    def isValid(self, root, lower = float('-inf'), higher = float('inf')):
+        if not root:
+            return True
+        if not ( lower<root.val<higher):
+            return False
+        
+        return self.isValid(root.left,lower,root.val) and self.isValid(root.right, root.val, higher)
+        
+        
+        
 
 
 
